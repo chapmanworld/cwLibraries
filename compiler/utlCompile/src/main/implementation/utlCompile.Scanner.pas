@@ -3,12 +3,12 @@
   PROPERTY OF: ChapmanWorld LLC.
   ALL RIGHTS RESERVED.
 *)
-unit utlLexers.Scanner;
+unit utlCompile.Scanner;
 
 interface
 uses
   utlIO
-, utlLexers
+, utlCompile
 ;
 
 type
@@ -41,7 +41,7 @@ type
 
 implementation
 uses
-  utlLexers.Cursor
+  utlCompile.Cursor
 ;
 
 function TScanner.Cursor: ICursor;

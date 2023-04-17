@@ -10,8 +10,42 @@ uses
   utlStatus
 , utlCollections
 , utlIO
-, utlLexers
 ;
+
+{$region ' ICursor ( Temporarily here )'}
+
+type
+  ///  <summary>
+  ///    A reference counted cursor object that may be obtained
+  ///    from the lexer during parsing.
+  ///  <summary>
+  ICursor = interface
+  ['{1F4CC41A-45B1-4A1F-8A33-A5087028C427}']
+
+    ///  <summary>
+    ///    The name of the file being scanned when this cursor was generated.
+    ///  </summary>
+    function Filename: string;
+
+    ///  <summary>
+    ///    Returns the line number being scanned when this cursor was generated.
+    ///  </summary>
+    function LineNumber: nativeuint;
+
+    ///  <summary>
+    ///     Returns the line position being scanned when this cursor was generated.
+    ///  </summary>
+    function LinePosition: nativeuint;
+
+    ///  <summary>
+    ///    Copies the contents of SourceCursor to this one.
+    ///  </summary>
+    procedure Assign( const SourceCursor: ICursor );
+
+  end;
+
+{$endregion}
+
 
 {$region ' Usage information '}
 (*
@@ -259,10 +293,6 @@ type
 {$endregion}
 
 {$region ' TCursor (factory) '}
-
-type
-  /// <exclude/>
-  ICursor = utlLexers.ICursor;
 
 type
   ///  <summary>

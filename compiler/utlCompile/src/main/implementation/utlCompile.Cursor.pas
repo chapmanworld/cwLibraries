@@ -3,12 +3,12 @@
   PROPERTY OF: ChapmanWorld LLC.
   ALL RIGHTS RESERVED.
 *)
-unit utlLexers.Cursor;
+unit utlCompile.Cursor;
 
 interface
 uses
   utlStatus
-, utlLexers
+, utlModels
 ;
 
 type
