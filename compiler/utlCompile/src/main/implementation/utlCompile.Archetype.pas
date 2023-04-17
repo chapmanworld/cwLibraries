@@ -3,13 +3,13 @@
   PROPERTY OF: ChapmanWorld LLC.
   ALL RIGHTS RESERVED.
 *)
-unit utlModels.Archetype;
+unit utlCompile.Archetype;
 
 interface
 uses
-  utlModels
-, utlModels.ArchetypeMember
-, utlModels.Reflection
+  utlCompile
+, utlCompile.ArchetypeMember
+, utlCompile.Reflection
 , utlCollections
 ;
 

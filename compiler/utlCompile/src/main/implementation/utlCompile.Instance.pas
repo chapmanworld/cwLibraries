@@ -3,17 +3,17 @@
   PROPERTY OF: ChapmanWorld LLC.
   ALL RIGHTS RESERVED.
 *)
-unit utlModels.Instance;
+unit utlCompile.Instance;
 
 interface
 uses
   utlStatus
 , utlIO
-, utlModels
 , utlCollections
-, utlModels.Archetype
-, utlModels.Representation
-, utlModels.Reflection
+, utlCompile
+, utlCompile.Archetype
+, utlCompile.Representation
+, utlCompile.Reflection
 ;
 
 type
@@ -50,10 +50,10 @@ implementation
 uses
   utlTypes
 , utlUnicode
-, utlModels.Storage
-, utlModels.Serializer
-, utlModels.Deserializer
-, utlModels.JsonSerializer
+, utlCompile.ModelStorage
+, utlCompile.Serializer
+, utlCompile.Deserializer
+, utlCompile.JsonSerializer
 ;
 
 function TInstance.FindRepresentationByObjectReference( const Ref: IInterface; out FoundIdx: uint64 ): boolean;

@@ -3,14 +3,14 @@
   PROPERTY OF: ChapmanWorld LLC.
   ALL RIGHTS RESERVED.
 *)
-unit utlModels.ArchetypeMember;
+unit utlCompile.ArchetypeMember;
 
 interface
 uses
   utlIO
 , utlCollections
-, utlModels
-, utlModels.Reflection
+, utlCompile
+, utlCompile.Reflection
 ;
 
 {$region ' TArchetypeMember '}
@@ -62,8 +62,8 @@ uses
   sysutils
 , utlStatus
 , utlTypes
-, utlModels.Storage
-, utlModels.Representation
+, utlCompile.ModelStorage
+, utlCompile.Representation
 ;
 
 procedure TArchetypeMember.AddToReferenceList( const ModelInstance: IModelInstance; const Representation: IInterface; const Item: IInterface );

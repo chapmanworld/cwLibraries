@@ -58,7 +58,6 @@ type
 implementation
 uses
   utlStatus
-, utlModels
 ;
 
 constructor TCompileChains.Create;

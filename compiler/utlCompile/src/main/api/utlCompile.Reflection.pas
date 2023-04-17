@@ -3,7 +3,7 @@
   PROPERTY OF: ChapmanWorld LLC.
   ALL RIGHTS RESERVED.
 *)
-unit utlModels.Reflection;
+unit utlCompile.Reflection;
 
 (*
    This unit provides type information regarding a model instance, which
@@ -13,7 +13,7 @@ unit utlModels.Reflection;
 
 interface
 uses
-  utlModels
+  utlCompile
 , utlCollections
 , utlIO
 ;

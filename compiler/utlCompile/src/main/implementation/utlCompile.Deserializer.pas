@@ -3,18 +3,18 @@
   PROPERTY OF: ChapmanWorld LLC.
   ALL RIGHTS RESERVED.
 *)
-unit utlModels.Deserializer;
+unit utlCompile.Deserializer;
 
 interface
 uses
   utlStatus
 , utlIO
 , utlCollections
-, utlModels
-, utlModels.Archetype
-, utlModels.ArchetypeMember
-, utlModels.Representation
-, utlModels.Reflection
+, utlCompile
+, utlCompile.Archetype
+, utlCompile.ArchetypeMember
+, utlCompile.Representation
+, utlCompile.Reflection
 ;
 
 type
@@ -107,9 +107,8 @@ implementation
 uses
   SysUtils
 , utlTypes
-, utlLexers
-, utlLexers.Cursor
-, utlModels.Storage
+, utlCompile.Cursor
+, utlCompile.ModelStorage
 ;
 
 const

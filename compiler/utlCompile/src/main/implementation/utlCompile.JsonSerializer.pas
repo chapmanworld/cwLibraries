@@ -3,18 +3,18 @@
   PROPERTY OF: ChapmanWorld LLC.
   ALL RIGHTS RESERVED.
 *)
-unit utlModels.JsonSerializer;
+unit utlCompile.JsonSerializer;
 
 interface
 uses
   utlStatus
 , utlIO
 , utlCollections
-, utlModels
-, utlModels.Archetype
-, utlModels.ArchetypeMember
-, utlModels.Representation
-, utlModels.Reflection
+, utlCompile
+, utlCompile.Archetype
+, utlCompile.ArchetypeMember
+, utlCompile.Representation
+, utlCompile.Reflection
 ;
 
 type
@@ -54,7 +54,7 @@ implementation
 uses
   SysUtils
 , utlTypes
-, utlModels.Storage
+, utlCompile.ModelStorage
 ;
 
 const

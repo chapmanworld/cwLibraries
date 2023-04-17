@@ -3,11 +3,11 @@
   PROPERTY OF: ChapmanWorld LLC.
   ALL RIGHTS RESERVED.
 *)
-unit utlModels.Representation;
+unit utlCompile.Representation;
 
 interface
 uses
-  utlModels
+  utlCompile
 ;
 
 {$region ' IRepresentation '}

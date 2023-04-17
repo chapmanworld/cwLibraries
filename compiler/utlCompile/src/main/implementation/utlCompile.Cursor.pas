@@ -8,7 +8,7 @@ unit utlCompile.Cursor;
 interface
 uses
   utlStatus
-, utlModels
+, utlCompile
 ;
 
 type
